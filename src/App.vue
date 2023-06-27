@@ -6,6 +6,7 @@
     <!-- <router-view/> -->
     <div class="container">
       <AddTodo></AddTodo>
+      <FilterTodos/>
       <router-view></router-view>
     </div>
   </div>
@@ -13,9 +14,10 @@
 
 <script>
 import AddTodo from './components/AddTodo.vue';
+import FilterTodos from './components/FilterTodos.vue';
 export default {
     name: "App",
-    components: { AddTodo }
+    components: { AddTodo, FilterTodos }
 }
 </script>
 
