@@ -4,7 +4,10 @@
     <div class="todos">
       <div v-for="todo in allTodos" :key="todo.id" class="todo">
         {{ todo.title }}
-        <span @click="deleteTodo(todo.id)" class="fa fa-trash"></span>
+        <div @click="deleteTodo(todo.id)">
+          <span  class="fa fa-trash"></span>
+        </div>
+        
       </div>
     </div>
   </div>
